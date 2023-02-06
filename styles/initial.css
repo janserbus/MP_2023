@@ -38,33 +38,3 @@ h5{
 h6{
     font-size: 1.7rem;
 }
-
-
-/* ----------COMPONENTS---------- */
-.icon{
-    display: inline-block;
-    font-size: 1.5rem;
-}
-
-.content__wrapper{
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.button{
-    display: block;
-    width: fit-content;
-    padding: .6rem 1.5rem;
-    text-decoration: none;
-    color: var(--white);
-    font-weight: 700;
-    background-color: var(--green);
-    border: 3px solid var(--green);
-    transition: all .3s ease-out;
-}
-.button:hover{
-    background-color: transparent;
-    color: var(--green);
-    transition: all .3s ease-in;
-}

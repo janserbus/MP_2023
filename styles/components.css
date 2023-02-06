@@ -1,0 +1,117 @@
+.icon{
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.content__wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.button{
+    display: block;
+    width: fit-content;
+    padding: .6rem 1.5rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    background-color: var(--green);
+    border: 3px solid var(--green);
+    transition: all .3s ease-out;
+}
+.button:hover{
+    background-color: transparent;
+    color: var(--green);
+    transition: all .3s ease-in;
+}
+
+
+
+/* HEADER
+  ===================================================== */
+
+.header{
+background-color: var(--blue);
+clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+/* ----------NAVBAR---------- */
+.header__navbar{
+    background-color: var(--dark-blue);   
+}
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px; 
+}
+
+.navbar__logo{
+    height: 70px;
+}
+
+.menu, .submenu{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.menu__link{
+    position: relative;
+}
+.menu__list--first{
+    display: inline-block;
+}
+.menu__link{
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: .5em 1em;
+}
+.menu__link:hover{
+    background-color: var(--green);
+    transition: all .2s ease;
+}
+.menu__link--dropdown{
+    cursor: pointer;
+}
+.submenu{
+    position: absolute;
+    background-color: var(--dark-blue);
+    display: none;
+}
+.menu > li:hover > .submenu{
+    display: block;
+}
+
+/* ----------HAMBURGER---------- */
+
+.hamburger{
+    display: none;
+}
+.hamburger__bar{
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 7px auto;
+    background: var(--white);    
+    transition: .3s ease-in-out;
+}
+
+
+/* ----------TITLE---------- */
+.header__title{
+    color: var(--white);
+    text-align: center;
+    padding: 1em 0;
+    margin: 0;
+}
+.header__subtitle{
+    color: var(--green);
+    display: block;
+    font-size: .43em;
+}
