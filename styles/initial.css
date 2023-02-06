@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700&display=swap');
 
-
 :root{
     --dark-blue: #003478;
     --blue: #04469D;
@@ -9,18 +8,17 @@
     --white: #FFFFFF;
     --green: #74D729;
 }
-
 html{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--black);
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    color: var(--blue);
 }
-
 h1{
     font-size: 4rem;
     font-weight: 900;
@@ -39,4 +37,34 @@ h5{
 }
 h6{
     font-size: 1.7rem;
+}
+
+
+/* ----------COMPONENTS---------- */
+.icon{
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.content__wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.button{
+    display: block;
+    width: fit-content;
+    padding: .6rem 1.5rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    background-color: var(--green);
+    border: 3px solid var(--green);
+    transition: all .3s ease-out;
+}
+.button:hover{
+    background-color: transparent;
+    color: var(--green);
+    transition: all .3s ease-in;
 }
