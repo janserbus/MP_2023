@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="./layers.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>    
 </head>
 <body>
     <header class="header">
-        <nav class="header__navbar">
-            <div class="content__wrapper navbar">
+        <nav class="header__navbar navbar">
+            <div class="content__wrapper navbar__content-wrapper">
                 <a href="./index.html"><img class="navbar__logo" src="./img/KAMERA_logo_white.svg" alt="logo firmy KAMERA Liberec"></a>
                 <menu class="navbar__menu menu">
-                    <li class="menu__list menu__list--first menu__list--dropdown"><span class="menu__link menu__link--dropdown">Služby <i class="menu__icon icon fa-sharp fa-solid fa-caret-down"></i></span>
+                    <li class="menu__list menu__list--first menu__list--dropdown"><a class="menu__link menu__link--dropdown" href="javascript:;">Služby <i class="menu__icon icon fa-sharp fa-solid fa-caret-down"></i></a>
                         <ul class="menu__submenu submenu submenu--first">
                             <li class="menu__list menu__list--second"><a class="menu__link" href="./sites/kamerove_systemy.html">Kamerové systémy</a></li>
                             <li class="menu__list menu__list--second"><a class="menu__link" href="./sites/zabezpecovaci_systemy.html">Zabezpečovací systémy</a></li>
@@ -37,15 +37,53 @@
         <h1 class="header__title">KAMERA Liberec<span class="header__subtitle">Váš specialista na kamerové systémy</span></h1>
     </header>
     <main>
-        <section class="who content__wrapper">
-            <h2>Kdo jsme ?</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam recusandae sit explicabo omnis maiores eaque amet placeat quisquam corrupti tempora sequi modi, ad et perferendis consequatur. Libero harum magnam quo?
-            </p>
-            <a class="button" href="#">Zjistit více</a>
-            <img src="./img/" alt="">
+        <section class="section who content__wrapper info-section info-section--2-colmuns">
+            <div class="info-section__content who__content">
+                <h2>Kdo jsme ?</h2>
+                <p>
+                    Firma kamera je malou firmou pohybující se v oblasti slaboproudých systémů.  Nicméně Vám zaručíme velmi kvalitní provedení požadovaného systému. Zařídíme za Vás vše potřebné.
+                </p>
+                <a class="button" href="#">Zjistit více</a>
+            </div>
+            <img class="who__img info-section__img" src="./img/inspector_highres.jpg" alt="ilustrační obrázek kluka co drří v ruce lampu">
+        </section>
+        <section class="why-us__background">
+            <h2 class="why-us__title why-us__title--main">Proč si vybrat právě nás?</h2>
+            <div class="why-us content__wrapper">
+                <div class="why-us__content-block">
+                    <div class="icon__wrapper"><i class="why-us__icon fa-sharp fa-solid fa-clock"></i></div>
+                    <h3 class="why-us__title why-us__title--sub">30 Let praxe</h3>
+                    <p class="why-us__paragraph">Kvalitu vám můžeme zaručit, i tím, že se v oboru pohybujeme již přes 30 let. Za dobu naší působnosti víme, že ne všichni poskytovatelé jsou dostatečně kvalifikování pro tuto práci.</p>
+                </div>
+                <div class="why-us__content-block">
+                    <div class="icon__wrapper"><i class="why-us__icon fa-solid fa-user-group"></i></div>
+                    <h3 class="why-us__title why-us__title--sub">Stovky spokojených zákazníků</h3>
+                    <p class="why-us__paragraph">Během našeho působení jsme úspěšně splnili stovky zakázek o čemž nejlépe vypovídají naše reference.</p>
+                </div>
+                <div class="why-us__content-block">
+                    <div class="icon__wrapper"><i class="why-us__icon fa-solid fa-sliders"></i></div>
+                    <h3 class="why-us__title why-us__title--sub">Široký výběr možností</h3>
+                    <p class="why-us__paragraph">Pomůžeme Vám s výběrem a navrhneme i několik řešení  v různých cenových variantách, přesně podle vaší potřeby.</p>
+                </div>
+            </div>            
+        </section>
+        <section class="offer content__wrapper">
+            <div class="offer__slider slider">
+                <div class="offer__slide slider__slide">
+                    <h3 class="offer__title">Kamerové systémy</h3>
+                    <img class="offer__content" src="" alt="">
+                    <a class="offer__button button" href="">Více</a>
+                </div>
+            </div>
+        </section>
+        <section class="about-us content__wrapper">
+            <h2 class="about-us__title">Co od nás můžete čekat?</h2>
+            <p class="about-us__content">Ptáte se co od nás můžete čekat? V několika jednoduchých krocích Vám navrhneme systém přesně pro vaše potřeby. Ptáte se jak? Nejprve nás kontaktujte. Po domluvě provedeme návrh přesně podle vašich potřeb a systém Vám naceníme. Nakonec celý systém nainstalujeme a k tomu Vám zaručíme servis.</p>
+            <div class="about-us__dropdown">
+                
+            </div>
         </section>
     </main>
-    <script src="./scripts/hamburger.js></script>
+    <script src="./scripts/hamburger.js"></script>
 </body>
 </html>
