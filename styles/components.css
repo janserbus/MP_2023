@@ -72,12 +72,9 @@
 .menu{
     display: flex;
 }
-.menu__link{
-    position: relative;
-}
-.menu__list--first{
-    display: block;
-}
+.menu__list--dropdown{
+    position: relative;}
+
 .menu__link{
     display: block;
     text-decoration: none;
@@ -85,23 +82,28 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
-    padding: .5em 1em;
+    padding: .7em 1em;
+    transition: all 220ms ease-out;
 }
 .menu__link:hover{
     background-color: var(--green);
-    transition: all .2s ease;
-}
-.menu__link--dropdown{
-    cursor: pointer;
+    transition: all 220ms ease-in;
 }
 .submenu{
     position: absolute;
-    background-color: var(--dark-blue);
-    display: none;
-    z-index: 2;
+    top: 200%;
+    left: 0;
+    width: 300px;
+    background-color: var(--dark-blue);    
+    opacity: 0;
+    transition: all 200ms ease-out;
 }
+
 .menu > li:hover > .submenu{
-    display: block;
+    top: 100%;
+    opacity: 1;
+    transition: all 200ms ease-out;
+
 }
 
 /* ----------HAMBURGER---------- */
@@ -172,9 +174,9 @@
     align-items: center;
     gap: 15%;
 }
-.info-section__content{
+/* .info-section__content{
 
-}
+} */
 .info-section__img{
     width: 40%;
     height: 40%;
