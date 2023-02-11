@@ -53,12 +53,11 @@
     font-weight: 700;
     background-color: var(--green);
     border: 3px solid var(--green);
-    transition: all .3s ease-out;
+    transition: all 300ms ease-out;
 }
-.button:hover, .button:active{
-    background-color: transparent;
-    color: var(--green);
-    transition: all .3s ease-in;
+.button:hover, .button:active{    
+    transform: scale(1.03);
+    transition: all 300ms ease-in;
 }
 
 /* ----------SECTION---------- */
@@ -211,6 +210,7 @@
         transition: all 200ms ease-out;
     }
     .menu__list--dropdown:hover > .submenu, .submenu.open{
+        /* TODO corectly open on  */
         max-height: initial;
         transition: all 200ms ease-in;
     }

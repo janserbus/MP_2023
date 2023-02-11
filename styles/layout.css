@@ -1,13 +1,14 @@
-.why-us__background{
-    background-color: var(--blue);
-    padding: 1rem 0 6rem 0;
-    
+.why-us::before{
+    background-color: var(--blue);    
 }
-.why-us{
+.why-us{    
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+}
+.why-us__content{
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;  
 }
-
 .why-us__title, .why-us__paragraph{
     color: var(--white);
     text-align: center;
@@ -27,4 +28,60 @@
     color: var(--green);
     font-size: 2rem;
     margin: 0 auto;
+}
+
+.slider__wrapper{
+    position: relative;
+}
+.slide__wrapper{
+    background-color: var(--blue);   
+    padding: .5em 1em;   
+}
+.slide__title{
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+}
+.slide__button{
+    width: initial;
+    text-align: center;
+    margin: 1em 0;
+}
+.controls__prev, .controls__next{
+    position: absolute;
+    top: 40%;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: var(--blue);
+    box-shadow: 3px 3px 9px 0px var(--shadow);
+    border: none;
+    cursor: pointer;
+}
+.controls__prev{
+    left: -2em;
+}
+.controls__next{
+    right: -2em;
+}
+.controls__icon{
+    font-size: 1.7em;
+    color: var(--white);
+}
+
+.tns-nav{
+    margin: 2em auto;
+    width: fit-content;
+}
+.tns-nav button{
+    margin: 0 .15em;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    border: 3px solid var(--blue);
+    background-color: transparent;
+}
+
+.tns-nav .tns-nav-active{
+    background-color: var(--blue);
 }
