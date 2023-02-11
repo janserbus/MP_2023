@@ -1,6 +1,7 @@
 /* GENERAL COMPONENTS
   ===================================================== */
 
+/* ----------ICONS---------- */
 .icon{
     font-size: 1.5rem;
 }
@@ -10,6 +11,7 @@
     margin: 0 auto;
 }
 
+/* ----------CONTENT---------- */
 .content__wrapper{
     max-width: var(--content-width);
     margin: 0 auto;
@@ -39,7 +41,8 @@
     }
 }
 
-.button{
+/* ----------BUTTON---------- */
+.button:link, .button:visited{
     display: block;
     width: fit-content;
     padding: .6rem 1.5rem;
@@ -52,29 +55,31 @@
     border: 3px solid var(--green);
     transition: all .3s ease-out;
 }
-.button:hover{
+.button:hover, .button:active{
     background-color: transparent;
     color: var(--green);
     transition: all .3s ease-in;
 }
 
+/* ----------SECTION---------- */
 .section{
     margin-top: 8rem;
     margin-bottom: 8rem;
 }
 
+
 /* HEADER
   ===================================================== */
-
+.header{
+    overflow-x: clip;    
+}
 .header::before{    
     background-color: var(--blue);
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
-
 }
 
 /* ----------NAVBAR---------- */
 .navbar{
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,9 +102,9 @@
     gap: 1em;
 }
 .menu__list--dropdown{
-    position: relative;}
-
-.menu__link{
+    position: relative;
+}
+.menu__link:link, .menu__link:visited{
     display: block;
     text-decoration: none;
     color: var(--white);
@@ -109,27 +114,28 @@
     padding: .7em 1em;
     transition: all 220ms ease-out;
 }
-.menu__link:hover{
+.menu__link:hover, .menu__link:active{
     background-color: var(--green);
     transition: all 220ms ease-in;
 }
 .submenu{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
     pointer-events: none;
     top: 200%;
     left: 0;
     width: 300px;
     background-color: var(--dark-blue);    
     opacity: 0;
-    transition: all 200ms ease-out;
+    transition: all 220ms ease-out;
 }
-
 .menu__list--dropdown:hover > .submenu{
     pointer-events: all;
     top: 100%;
     opacity: 1;
-    transition: all 200ms ease-out;
-
+    transition: all 220ms ease-out;
 }
 
 /* ----------HAMBURGER---------- */
@@ -145,40 +151,6 @@
     background: var(--white);    
     transition: .3s ease-in-out;
 }
-@media only screen and (max-width: 660px){
-    .hamburger{
-        display: block;
-    }
-    .hamburger.active .hamburger__bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .hamburger__bar:nth-child(1){
-        transform: translateY(11.5px) rotateZ(45deg); 
-    }
-    .hamburger.active .hamburger__bar:nth-child(3){
-        transform: translateY(-11.5px) rotateZ(-45deg);
-    }    
-    
-    .menu{
-        position: absolute;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 1em;
-        top: -50%;
-        left: 0;
-        background-color: var(--dark-blue);
-        z-index: -1;
-        box-shadow: 0px 12px 20px 0px var(--shadow);
-        transition: all 300ms ease-out 150ms;
-
-    }
-    .menu.active{
-        transition: all .3s ease-in;
-        right: 0;
-    }
-}
 
 /* ----------TITLE---------- */
 .header__title{
@@ -193,6 +165,56 @@
     font-size: .43em;
 }
 
+/* ----------RESPONSIVE HEADER---------- */
+@media only screen and (max-width: 660px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .hamburger__bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .hamburger__bar:nth-child(1){
+        transform: translateY(11.5px) rotateZ(45deg); 
+    }
+    .hamburger.active .hamburger__bar:nth-child(3){
+        transform: translateY(-11.5px) rotateZ(-45deg);
+    }        
+    .menu{
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1em;
+        top: 100%;
+        right: -100%;
+        background-color: var(--dark-blue);
+        z-index: 1;
+        box-shadow: 0px 12px 20px 0px var(--shadow);
+        transition: all 300ms ease-out 150ms;
+
+    }
+    .menu.active{
+        right: 0;
+        transition: all 300ms ease-in;
+    }
+    .menu__list--first{
+        width: 80%;
+    }
+    .menu__list--second{
+        width: 300px;
+    }
+    .submenu{
+        position: initial;
+        margin-left: 1em;
+        max-height: 0;
+        transition: all 200ms ease-out;
+    }
+    .menu__list--dropdown:hover > .submenu, .submenu.open{
+        max-height: initial;
+        transition: all 200ms ease-in;
+    }
+}
 
 
 /* info-section

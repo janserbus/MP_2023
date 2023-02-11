@@ -1,6 +1,6 @@
 .why-us__background{
     background-color: var(--blue);
-    padding: 2rem 0 4rem 0;
+    padding: 1rem 0 6rem 0;
     
 }
 .why-us{
@@ -22,10 +22,6 @@
 }
 .why-us__content-block{
     width: 30%;
-}
-[class^="icon-"], [class*=" icon-"] {
-    display: inline-block;
-    width: 100%;
 }
 .why-us__icon{
     color: var(--green);
