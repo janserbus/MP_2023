@@ -1,6 +1,6 @@
-const hamburger = document.querySelector(".hamburger");
-const menu = document.querySelector(".menu");
-const dropdown = document.querySelector(".menu__list--dropdown");
+var hamburger = document.querySelector(".hamburger");
+var menu = document.querySelector(".menu");
+var dropdown = document.querySelector(".menu__list--dropdown");
 
 hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("active");

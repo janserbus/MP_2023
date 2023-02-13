@@ -1,6 +1,3 @@
-.why-us::before{
-    background-color: var(--blue);    
-}
 .why-us{    
     padding-top: 1rem;
     padding-bottom: 6rem;
@@ -59,10 +56,10 @@
     cursor: pointer;
 }
 .controls__prev{
-    left: -2em;
+    left: -5em;
 }
 .controls__next{
-    right: -2em;
+    right: -5em;
 }
 .controls__icon{
     font-size: 1.7em;
@@ -85,3 +82,4 @@
 .tns-nav .tns-nav-active{
     background-color: var(--blue);
 }
+
