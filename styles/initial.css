@@ -57,3 +57,9 @@ img{
 li{
     margin: .8em 0;
 }
+
+@media only screen and (max-width: 540px){
+    html{
+        font-size: 16px;
+    }
+}

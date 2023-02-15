@@ -1,6 +1,6 @@
 var slider = tns({
     container: '.slider',
-    items: 3,
+    items: 1,
     slideBy: '1',
     speed: 700,
     gutter: 20,
@@ -11,5 +11,10 @@ var slider = tns({
     prevButton: ".controls__prev",
     nextButton: ".controls__next",
     navPosition: "bottom",
-    autoplayButtonOutput: false
+    autoplayButtonOutput: false,
+    responsive:{
+      800:{
+        items: 3
+      }
+    }
   });

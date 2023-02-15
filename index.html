@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KAMERA Liberec</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">    
     <link rel="stylesheet" href="./layers.css">
+    <link rel="stylesheet" href="./styles/layout_landing.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>    
     <script defer src="./scripts/viewport_width.js"></script>
     <script defer src="./scripts/slider.js"></script>
-    <script defer src="./scripts/hamburger.js"></script>
+    <script defer src="./scripts/header.js"></script>
     <script defer src="./scripts/accordion.js"></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <nav class="header__navbar navbar content__wrapper content__background">
             <a href="./index.html"><img class="navbar__logo" src="./img/KAMERA_logo_white.svg" alt="logo firmy KAMERA Liberec"></a>
             <menu class="navbar__menu menu">
-                <li class="menu__list menu__list--first menu__list--dropdown"><a class="menu__link menu__link--dropdown" href="javascript:;">Služby<i class="menu__icon icon fa-sharp fa-solid fa-caret-down"></i></a>
+                <li class="menu__list menu__list--first menu__list--dropdown"><a class="menu__link menu__link--dropdown" href="javascript:;">Služby</a>
                     <ul class="menu__submenu submenu submenu--first">
                         <li class="menu__list menu__list--second"><a class="menu__link" href="./sites/kamerove_systemy.html">Kamerové systémy</a></li>
                         <li class="menu__list menu__list--second"><a class="menu__link" href="./sites/zabezpecovaci_systemy.html">Zabezpečovací systémy</a></li>
@@ -152,6 +153,26 @@
                 </div>
             </div>
         </section>
+        <section class="section showcase content__wrapper">
+            <!-- <div class="video__wrapper">
+                <iframe src="https://player.vimeo.com/video/361302811?h=6c23da08ac" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>            
+            </div> -->
+            <div class="news">
+                <div class="news__icon-wrapper">
+                    <i class="icon news__icon fa-solid fa-info"></i>
+                </div>
+                <h3 class="news__title font--white">Nabídka Práce</h3>
+                <div class="news__content font--white">
+                    <p>
+                        Sháníme elektromontéra, ideálně se znalostí slaboproudých systémů. Možno na HPP nebo smlouvu. Automobil vítán, při bydlišti v LBC ale není podmínkou. Nástup možný ihned.
+                    </p>
+                    <div class="news__info news__info--left">Kontakt: 777 787 021</div>
+                    <div class="news__info news__info--right">M. Porš</div>
+                </div>
+                <a class="button news__button" href="#"><i class="icon fa-sharp fa-solid fa-caret-right"></i></a>
+            </div>
+        </section>
+        
         <section class="about-us content__wrapper content__background content__background--blue section">
             <h2 class="about-us__title font--white">Co od nás můžete čekat?</h2>
             <p class="about-us__description font--white">Ptáte se co od nás můžete čekat? V několika jednoduchých krocích Vám navrhneme systém přesně pro vaše potřeby. Ptáte se jak? Nejprve nás kontaktujte. Po domluvě provedeme návrh přesně podle vašich potřeb a systém Vám naceníme. Nakonec celý systém nainstalujeme a k tomu Vám zaručíme servis.</p>
@@ -203,6 +224,21 @@
                 </div>                
             </div>
         </section>
+        <section class="section history content__wrapper">
+            <h2>Krátká historie firmy:</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            </p>
+            <a class="button" href="./o_firme.html">O firmě</a>
+        </section>
+        <footer class="footer">
+            <div class="footer__content">
+                <p class="footer__paragraph font--white">
+                    Všechna práva vyhrazena ©<br>
+                    KAMERA Liberec s.r.o.
+                </p>
+            </div>
+        </footer>        
     </main>    
 </body>
 </html>
