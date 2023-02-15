@@ -160,7 +160,7 @@
     opacity: 0;
     transition: all 220ms ease-out;
 }
-.menu__list--dropdown:hover > .submenu{
+.menu__list--dropdown:hover > .submenu, .submenu.open{
     pointer-events: all;
     top: 100%;
     opacity: 1;
