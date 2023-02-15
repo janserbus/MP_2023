@@ -1,0 +1,78 @@
+.why-us{    
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+}
+.why-us__content{
+    display: flex;
+    justify-content: space-between;  
+}
+.why-us__title, .why-us__paragraph{
+    color: var(--white);
+    text-align: center;
+}
+.why-us__title--main{
+    margin: 2rem 0 4rem 0;
+}
+.why-us__title--sub{
+    text-transform: capitalize;
+    /* height: 2em; //potentionally line ups the paragraphs */
+    font-size: 2rem;
+}
+.why-us__content-block{
+    width: 30%;
+}
+.why-us__icon{
+    color: var(--green);
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+
+.news{
+    background-color: var(--blue);
+
+    display: grid;
+    grid-template-rows: 4em 1fr;
+    grid-template-columns: 12% 1fr 12%;
+    grid-template-areas: 
+        "icon title button"
+        "icon content button";
+}
+.news__title{
+    padding: 1rem;
+    margin: 0;
+    grid-area: title;
+    justify-self: stretch;
+    align-self: center;
+}
+.news__icon-wrapper{
+    grid-area: icon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news__content{
+    grid-area: content;
+    padding: 1rem;
+}
+.news__icon-wrapper{
+    background-color: var(--green);
+}
+.news__icon{
+    font-size: 3rem;
+}
+.news__button{
+    grid-area: button;
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news__info{
+    font-weight: 700;
+}
