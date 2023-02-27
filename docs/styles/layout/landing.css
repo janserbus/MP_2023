@@ -27,6 +27,22 @@
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 1000px){
+    .why-us__content{
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    .why-us__content-block{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 500px){
+
+    .why-us__content-block{
+        width: 90%;
+    }
+}
 
 .news{
     background-color: var(--blue);

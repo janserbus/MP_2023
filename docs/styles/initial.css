@@ -11,6 +11,7 @@
     --shadow: #002860;
     
     --content-width: 1140px;
+    --slider-arrow-size: 4rem;
 }
 
 html{
@@ -64,4 +65,115 @@ li{
     html{
         font-size: 16px;
     }
+}
+
+/* GENERAL COMPONENTS
+  ===================================================== */
+
+/* ----------ICONS---------- */
+.icon{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.icon__wrapper{
+    display: block;
+    width: fit-content;   
+}
+.icon__wrapper--centered{
+    margin: 0 auto;
+}
+.icon__wrapper--fit{
+    padding: .5em;
+}
+
+/* ----------CONTENT---------- */
+.content__wrapper{
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.content__background{
+    position: relative;
+}
+.content__background--blue::before{
+    background-color: var(--blue);    
+}
+.content__background--blue hgroup{
+    color: var(--white);
+}
+.content__background::before{
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.content__wrapper.content__background::before{    
+    width: var(--viewport-width);
+    left: calc(-1 *((var(--viewport-width) - 100%) / 2));    
+}
+@media only screen and (max-width: var(--content-width)){
+    .content__wrapper.content__background::before{    
+        width: 100%;
+        left: 0;    
+    }
+}
+
+/* ----------BUTTON---------- */
+.button:link, .button:visited{
+    display: block;
+    width: fit-content;
+    padding: .6rem 1.5rem;
+    margin: 2em 0;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: var(--green);
+    border: 3px solid var(--green);
+    transition: all 100ms ease-in;
+}
+.button:hover, .button:active{    
+    transform: scale(1.03);
+    transition: all 100ms ease-in;
+}
+
+/* ----------SECTION---------- */
+.section{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* ----------INFO-SECTION---------- */
+.info-section--2-colmuns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
+}
+.info-section__img{
+    width: 40%;
+    height: auto;
+}
+
+@media only screen and (max-width: 700px)
+{
+    .info-section--2-colmuns{
+        flex-direction: column;
+    }
+    .info-section__img{
+        width: 90%;        
+        margin-top: 4rem;
+    }
+    
+}
+
+/* ----------INLINE COMPONENTS---------- */
+.font--white{
+    color: var(--white);
 }
