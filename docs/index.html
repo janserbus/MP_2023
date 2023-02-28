@@ -17,20 +17,20 @@
     <script defer src="./scripts/accordion.js"></script>
 </head>
 <body>
-    <header class="header content__background">
+    <header class="header content__background content__background--blue">
         <nav class="header__navbar navbar content__wrapper content__background">
             <a href="./index.html"><img class="navbar__logo" src="./img/KAMERA_logo_white.svg" alt="logo firmy KAMERA Liberec"></a>
-            <menu class="navbar__menu menu">
-                <li class="menu__list menu__list--first menu__list--dropdown"><a class="menu__link menu__link--dropdown" href="javascript:;">Služby</a>
-                    <ul class="menu__submenu submenu submenu--first">
-                        <li class="menu__list menu__list--second"><a class="menu__link" href="./sluzby/kamerove_systemy.html">Kamerové systémy</a></li>
-                        <li class="menu__list menu__list--second"><a class="menu__link" href="./sluzby/zabezpecovaci_systemy.html">Zabezpečovací systémy</a></li>
-                        <li class="menu__list menu__list--second"><a class="menu__link" href="./sluzby/ozvucovaci_systemy.html">Ozvučovací systémy</a></li>
-                        <li class="menu__list menu__list--second"><a class="menu__link" href="./sluzby/ostatni_systemy.html">Ostatní slaboproudé systémy</a></li>
+            <menu class="navbar__navmenu navmenu">
+                <li class="navmenu__list navmenu__list--first navmenu__list--dropdown"><a class="navmenu__link navmenu__link--dropdown" href="javascript:;">Služby</a>
+                    <ul class="navmenu__submenu submenu submenu--first">
+                        <li class="navmenu__list navmenu__list--second"><a class="navmenu__link" href="./sluzby/kamerove_systemy.html">Kamerové systémy</a></li>
+                        <li class="navmenu__list navmenu__list--second"><a class="navmenu__link" href="./sluzby/zabezpecovaci_systemy.html">Zabezpečovací systémy</a></li>
+                        <li class="navmenu__list navmenu__list--second"><a class="navmenu__link" href="./sluzby/ozvucovaci_systemy.html">Ozvučovací systémy</a></li>
+                        <li class="navmenu__list navmenu__list--second"><a class="navmenu__link" href="./sluzby/ostatni_systemy.html">Ostatní slaboproudé systémy</a></li>
                     </ul>
                 </li>
-                <li class="menu__list menu__list--first"><a class="menu__link" href="./o_firme.html">O firmě</a></li>
-                <li class="menu__list menu__list--first"><a class="menu__link" href="./kontakt.html">Kontakt</a></li>                
+                <li class="navmenu__list navmenu__list--first"><a class="navmenu__link" href="./o_firme.html">O firmě</a></li>
+                <li class="navmenu__list navmenu__list--first"><a class="navmenu__link" href="./kontakt.html">Kontakt</a></li>                
             </menu>
             <div class="navbar__hamburger hamburger">
                 <span class="hamburger__bar"></span>
@@ -43,8 +43,8 @@
     <main class="main">
         <section class="section who content__wrapper info-section info-section--2-colmuns">
             <div class="info-section__content who__content">
-                <h2>Kdo jsme ?</h2>
-                <p>
+                <h2 class="info-section__title">Kdo jsme ?</h2>
+                <p class="info-section__paragraph">
                     Firma kamera je malou firmou pohybující se v oblasti slaboproudých systémů.  Nicméně Vám zaručíme velmi kvalitní provedení požadovaného systému. Zařídíme za Vás vše potřebné.
                 </p>
                 <a class="button" href="#more">Zjistit více</a>
@@ -148,7 +148,7 @@
         <section class="section iframe__wrapper content__wrapper content__wrapper--no-padding">    
                 <iframe class="iframe iframe--responsive" src="https://player.vimeo.com/video/361302811?h=6c23da08ac"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture;"></iframe>
         </section>
-        <section class="news content__wrapper content__wrapper--no-padding content__wrapper--nopadding">
+        <section class="news content__wrapper content__wrapper--no-padding">
                 <div class="news__icon-wrapper">
                     <i class="icon news__icon fa-solid fa-info"></i>
                 </div>
@@ -163,48 +163,48 @@
                 <a class="button news__button" href="#"><i class="icon news__button-icon fa-sharp fa-solid fa-caret-right"></i></a>
             </section>
         <section class="about-us content__wrapper content__background content__background--blue section">
-            <h2 class="about-us__title font--white">Co od nás můžete čekat?</h2>
-            <p class="about-us__description font--white">Ptáte se co od nás můžete čekat? V několika jednoduchých krocích Vám navrhneme systém přesně pro vaše potřeby. Ptáte se jak? Nejprve nás kontaktujte. Po domluvě provedeme návrh přesně podle vašich potřeb a systém Vám naceníme. Nakonec celý systém nainstalujeme a k tomu Vám zaručíme servis.</p>
+            <h2 class="about-us__title">Co od nás můžete čekat?</h2>
+            <p class="about-us__description">Ptáte se, co od nás můžete čekat? V několika jednoduchých krocích Vám navrhneme systém přesně pro vaše potřeby. Ptáte se jak? Nejprve nás kontaktujte. Po konzultaci navrhneme řešení, tak aby co nejvíce vyhovovalo vaším potřebám a technickým možnostem a poradíme Vám se vším potřebným. V návrhu zahrneme i Vaší finanční stránku, a nakonec celý systém nainstalujeme a k tomu Vám zaručíme servis.</p>
             <div class="about-us__content">                
                 <div class="about-us__accordion accordion">
                     <div class="accordion__bar">
-                        <h3 class="accordion__title font--white"><span class="accordion__number">1.</span>Návrh systému</h3>                        
+                        <h3 class="accordion__title"><span class="accordion__number">1.</span>Návrh systému</h3>                        
                     </div>
                     <div class="accordion__content">
-                        <p class="accordion__paragraph font--white">
-                            Je mnoho hledisek, ke kterým je třeba při návrhu systému přihlédnout, mnoho pravidel a technických parametrů, které je třeba vzít v potaz. V dnešní době spousta firem, i těch, které se do nedávné doby zabývaly pouze výpočetní technikou, nabízí kamerové systémy. Domníváme se, že 30 let praxe v oboru nás opravňuje k tomu, abychom mohli prohlásit, že máme potřebné znalosti a praktické zkušenosti, což nejlépe dokládá naše referenční listina a především spokojení zákazníci, abychom dokázali navrhnout, realizovat a v neposlední řadě kvalitně servisovat bezpečnostní kamerové systémy na úrovni dnešní doby.
+                        <p class="accordion__paragraph">
+                            Je mnoho hledisek, ke kterým je třeba při návrhu systému přihlédnout, mnoho pravidel a technických parametrů, které je třeba vzít v potaz. V dnešní době spousta firem, i těch, které se do nedávné doby zabývaly pouze výpočetní technikou, nabízí kamerové systémy. Domníváme se, že 30 let praxe v oboru nás opravňuje k tomu, abychom mohli prohlásit, že máme potřebné znalosti a praktické zkušenosti abychom dokázali navrhnou kamerový systém na úrovni dnešní doby.
                         </p>
                     </div>
                 </div>
                 <div class="about-us__accordion accordion">
                     <div class="accordion__bar">
-                        <h3 class="accordion__title font--white"><span class="accordion__number">2.</span>Nacenění</h3>                        
+                        <h3 class="accordion__title"><span class="accordion__number">2.</span>Nacenění</h3>                        
                     </div>
                     <div class="accordion__content">
-                        <p class="accordion__paragraph font--white">
-                            Pro každého zákazníka je dnes důležitá ekonomická stránka. Proto ve většině nabídek uvádíme několik řešení. Kalkulaci nákladů uvedeme ve variantě minimalistické až po nadstandardní. Ve výběrových řízeních, kde je třeba nacenit již existující projekt nebo výkaz výměr, zachováme samozřejmě pro možnost srovnání původní návrh systému. Pokud je ze strany investora zájem, jsme schopni předložit variantní řešení, které se může od původně navrženého systému často nejen cenou, ale i z hlediska výstupů systému, velice lišit.
+                        <p class="accordion__paragraph">
+                            Pro každého zákazníka je dnes důležitá ekonomická stránka. Proto pro Vás připravíme několik řešení v různých cenových kategoriích. Kalkulaci nákladů uvedeme ve variantě minimalistické až po nadstandardní. Ve výběrových řízeních, kde je třeba nacenit již existující projekt nebo výkaz výměr, zachováme samozřejmě pro možnost srovnání původní návrh systému. Pokud je ze strany investora zájem, jsme schopni předložit variantní řešení, které se může od původně navrženého systému často nejen cenou, ale i z hlediska výstupů systému, velice lišit.
                         </p>
                     </div>
                 </div>
                 <div class="about-us__accordion accordion">
                     <div class="accordion__bar">
-                        <h3 class="accordion__title font--white"><span class="accordion__number">3.</span>Realizace</h3>                        
+                        <h3 class="accordion__title"><span class="accordion__number">3.</span>Realizace</h3>                        
                     </div>
                     <div class="accordion__content">
-                        <p class="accordion__paragraph font--white">
-                            Pro realizaci systému disponujeme potřebnou technikou a personálem. Zaměstnanci se pravidelně účastní školení potřebných pro zkvalitnění jejich práce. Možná je i spolupráce s jinými firmami. Na řadě zakázek jsme spolupracovali jak s firmami z našeho oboru, tak i s elektromontážními společnostmi. Je zřejmé, že tato forma realizace zakázky je výhodná především na akcích, které jsou ve vzdálenějších lokalitách. 
+                        <p class="accordion__paragraph">
+                            Pro realizaci systému disponujeme potřebnou technikou a personálem. Zaměstnanci se pravidelně účastní školení potřebných pro zkvalitnění jejich práce. Možná je i spolupráce s jinými firmami. Na řadě zakázek jsme spolupracovali jak s firmami z našeho oboru, tak i s elektromontážními společnostmi. Je zřejmé, že tato forma realizace zakázky je výhodná především na akcích, které jsou ve vzdálenějších lokalitách.
                         </p>
                     </div>
                 </div>
                 <div class="about-us__accordion accordion">
                     <div class="accordion__bar">
-                        <h3 class="accordion__title font--white"><span class="accordion__number">4.</span>Servis</h3>                        
+                        <h3 class="accordion__title"><span class="accordion__number">4.</span>Servis</h3>                        
                     </div>
                     <div class="accordion__content">
-                        <p class="accordion__paragraph font--white">
-                            Je mnoho hledisek, ke kterým je třeba při návrhu systému přihlédnout, mnoho pravidel a technických parametrů, které je třeba vzít v potaz. V dnešní době spousta firem, i těch, které se do nedávné doby zabývaly pouze výpočetní technikou, nabízí kamerové systémy. Domníváme se, že 30 let praxe v oboru nás opravňuje k tomu, abychom mohli prohlásit, že máme potřebné znalosti a praktické zkušenosti, což nejlépe dokládá naše referenční listina a především spokojení zákazníci, abychom dokázali navrhnout, realizovat a v neposlední řadě kvalitně servisovat bezpečnostní kamerové systémy na úrovni dnešní doby.
+                        <p class="accordion__paragraph">
+                            Podmínky záručního a pozáručního servisu jsou z hlediska zákazníka klíčovou záležitostí. Servisní podmínky upravuje servisní smlouva, resp. smlouva o záručním, a především pozáručním servisu. Ta definuje i intervaly funkčních zkoušek a revizí systému, případně smluvně upravuje i režim pravidelných profylaktických prací. Ve většině případů jí předkládáme po uplynutí záruční doby na žádost objednatele. 
                         </p>
-                        <ul class="font--white">
+                        <ul>
                             <li>Běžné záruční podmínky - nástup do 24 hodin od nahlášení závady</li>
                             <li>Možnost smluvních nadstandardních záručních podmínek</li>
                             <li>Pozáruční servis</li>

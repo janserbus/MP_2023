@@ -7,7 +7,6 @@
     justify-content: space-between;  
 }
 .why-us__title, .why-us__paragraph{
-    color: var(--white);
     text-align: center;
 }
 .why-us__title--main{

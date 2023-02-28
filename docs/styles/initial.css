@@ -98,7 +98,7 @@ li{
 .content__background--blue::before{
     background-color: var(--blue);    
 }
-.content__background--blue hgroup{
+.content__background--blue *{
     color: var(--white);
 }
 .content__background::before{
@@ -151,30 +151,6 @@ li{
     margin-bottom: 8rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-}
-
-/* ----------INFO-SECTION---------- */
-.info-section--2-colmuns{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15%;
-}
-.info-section__img{
-    width: 40%;
-    height: auto;
-}
-
-@media only screen and (max-width: 700px)
-{
-    .info-section--2-colmuns{
-        flex-direction: column;
-    }
-    .info-section__img{
-        width: 100%;        
-        margin-top: 4rem;
-    }
-    
 }
 
 /* ----------IFRAME---------- */
