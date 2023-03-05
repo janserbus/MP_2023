@@ -1,50 +1,3 @@
-/* INFO-SECTION
-  ===================================================== */
-.info-section--2-colmuns{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 6%;
-}
-.info-section__content{
-    flex-shrink: 2;
-}
-.info-section__img{
-    width: 47%;
-    height: auto;
-    flex-grow: 2;
-}
-.info-section__menu{
-    width: 47%;
-    flex-grow: 2;
-}
-.menu{
-    margin: 0;
-    padding: 0;
-}
-.menu__list{
-    width: 100%;
-    list-style-type: none;
-    margin-bottom: 1.5rem;
-}
-.menu__link{
-    width: auto;
-    margin: 0;
-    text-align: center;
-}
-
-@media only screen and (max-width: 700px)
-{
-    .info-section--2-colmuns{
-        flex-direction: column;
-    }
-    .info-section__img{
-        width: 100%;        
-        margin-top: 4rem;
-    }
-    
-}
-
 /* HEADER
   ===================================================== */
 .header{
@@ -252,7 +205,7 @@
     text-align: right;
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 540px){
     .accordion__bar{
         padding: 1rem;
     }
@@ -391,4 +344,74 @@
 }
 .footer__paragraph{
     text-align: center;
+}
+
+/* INFO-SECTION
+  ===================================================== */
+  .info-section--2-colmuns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+.info-section__content{
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+.info-section__img{
+    width: 40%;
+}
+.info-section__menu{
+    flex-basis: 30%;
+    min-width: 270px;
+}
+.menu, .menu__list{
+    margin: 0;
+    padding: 0;
+}
+.menu__title{
+    text-align: center;
+}
+.menu__list-item{    
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+.menu__link{
+    width: auto;
+    margin: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 730px)
+{
+    .info-section--2-colmuns{
+        flex-direction: column;
+    }
+    .info-section__content{
+        width: 100%;
+    }
+    .info-section__img{
+        width: 100%;        
+        margin-top: 4rem;
+    }   
+    .info-section__menu{
+        width: 100%;
+    }
+
+    .menu{
+        margin-bottom: 4rem;
+    }
+    .menu__title{
+        color: var(--white);
+        margin: .5em 0;
+    }
+    .menu__title-wrapper{
+        background-color: var(--green);
+    }
+    .menu__title-wrapper:hover{
+        background-color: var(--dark-green);
+    }    
+    .menu__list{
+        background-color: var(--green);
+    }
 }

@@ -45,6 +45,7 @@
 
 .news{
     background-color: var(--blue);
+    padding: 0;
 
     display: grid;
     grid-template-rows: auto auto;

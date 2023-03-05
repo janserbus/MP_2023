@@ -11,11 +11,13 @@
 
     <script defer src="../scripts/header.js"></script>
     <script defer src="../scripts/viewport_width.js"></script>
+    <script defer src="../scripts/accordion.js"></script>
+    <script defer src="../scripts/menu_accordion.js"></script>
 </head>
 <body>
     <header class="header content__background content__background--blue">
         <nav class="header__navbar navbar content__wrapper content__background">
-            <a href="../index.html"><img class="navbar__logo" src="../img/KAMERA_logo_white.svg" alt="logo firmy KAMERA Liberec"></a>
+            <a href="../index.html"><img class="navbar__logo" src="../img/KAMERA_logo_white.svg" alt="logo firmy KAMERA Liberec" width="186" height="70"></a>
             <menu class="navbar__navmenu navmenu">
                 <li class="navmenu__list navmenu__list--first navmenu__list--dropdown"><a class="navmenu__link navmenu__link--dropdown" href="javascript:;">Služby</a>
                     <ul class="navmenu__submenu submenu submenu--first">
@@ -37,18 +39,23 @@
         <h1 class="header__title">Kamerové systémy</h1>
     </header>
     <main class="main">
-        <section class="section info-section info-section--2-colmuns content__wrapper">
+        <section class="section info-section info-section--2-colmuns content__wrapper uvod">
             <div class="info-section__content">
                 <h2 class="info-section__title">Proč si nechat navrhnout kamerový systém?</h2>
                 <p class="info-section__paragraph">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, pariatur, neque reiciendis praesentium dolorum maiores vitae nam accusantium perspiciatis soluta, qui repellat molestias natus sapiente. Atque quasi quas repellendus quod?
                 </p>
             </div>
-            <ul class="menu info-section__menu">
-                <li class="menu__list"><a class="button menu__link" href="./ozvucovaci_systemy.html">Ozvučovací systémy</a></li>
-                <li class="menu__list"><a class="button menu__link" href="./zabezpecovaci_systemy.html">Zabezpečovací systémy</a></li>
-                <li class="menu__list"><a class="button menu__link" href="./ostatni_systemy.html">Ostatní slaboproudé systémy</a></li>
-            </ul>
+            <div class="menu info-section__menu">
+                <div class="menu__title-wrapper">
+                    <h3 class="menu__title">Ostatní služby:</h3>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a class="button menu__link" href="./ozvucovaci_systemy.html">Ozvučovací systémy</a></li>
+                    <li class="menu__list-item"><a class="button menu__link" href="./zabezpecovaci_systemy.html">Zabezpečovací systémy</a></li>
+                    <li class="menu__list-item"><a class="button menu__link" href="./ostatni_systemy.html">Ostatní slaboproudé systémy</a></li>
+                </ul>
+            </div>
         </section>
         <section class="section expectations info-section info-section--2-colmuns content__wrapper content__background content__background--blue">
             <div class="info-section__content expectations__content">
@@ -58,7 +65,7 @@
                 </p>
                 <a class="button" href="../kontakt.html">Napište nám</a>
             </div>            
-            <img class="info-section__img expectations__img" src="../img/kamera_DS-2CD2347G2-LU.jpg" alt="ilustrační obrázek kamery">
+            <img class="info-section__img expectations__img" src="../img/kamera_DS-2CD2347G2-LU.jpg" alt="ilustrační obrázek kamery" loading="lazy" width="535" height="400">
         </section>
         <section class="section advice content__wrapper">
             <h2 class="advice__title">Co je dobré zvážit?</h2>
@@ -67,15 +74,15 @@
         <section class="logos section content__wrapper">
             <h2 class="logos__title">Dodavatelé:</h2>
             <div class="logos__content">
-                <img src="../img/logo_kamery/kelkom.gif" alt="logo Kelkom" class="logos__img">
-                <img src="../img/logo_kamery/Secutech cz.jpg" alt="logo Secutech" class="logos__img">
-                <img src="../img/logo_kamery/metel.gif" alt="logo Metel" class="logos__img">
-                <img src="../img/logo_kamery/escad.gif" alt="logo ESCAD Trade" class="logos__img">
-                <img src="../img/logo_kamery/eurosat.jpg" alt="logo Eurosat" class="logos__img">
-                <img src="../img/logo_kamery/elnika.gif" alt="logo Elinka" class="logos__img">
-                <img src="../img/logo_kamery/Logo_EAC.bmp" alt="logo Express Alarm Czech" class="logos__img logos__img--horizontal">
-                <img src="../img/logo_kamery/viakom.png" alt="logo Viakom" class="logos__img">
-                <img src="../img/logo_kamery/Logo_Euroalarm 025.jpg" alt="logo Euroalarm" class="logos__img">
+                <img src="../img/logo_kamery/kelkom.gif" alt="logo Kelkom" class="logos__img" loading="lazy" width="163" height="64">
+                <img src="../img/logo_kamery/Secutech cz.jpg" alt="logo Secutech" class="logos__img" loading="lazy" width="165" height="64">
+                <img src="../img/logo_kamery/metel.gif" alt="logo Metel" class="logos__img" loading="lazy" width="245" height="64">
+                <img src="../img/logo_kamery/escad.gif" alt="logo ESCAD Trade" class="logos__img" loading="lazy" width="238" height="64">
+                <img src="../img/logo_kamery/eurosat.jpg" alt="logo Eurosat" class="logos__img" loading="lazy" width="207" height="64">
+                <img src="../img/logo_kamery/elnika.gif" alt="logo Elinka" class="logos__img" loading="lazy" width="113" height="64">
+                <img src="../img/logo_kamery/Logo_EAC.bmp" alt="logo Express Alarm Czech" class="logos__img logos__img--horizontal" loading="lazy" width="128" height="128">
+                <img src="../img/logo_kamery/viakom.png" alt="logo Viakom" class="logos__img" loading="lazy" width="190" height="64">
+                <img src="../img/logo_kamery/Logo_Euroalarm 025.jpg" alt="logo Euroalarm" class="logos__img" loading="lazy" width="337" height="64">
             </div>
         </section>
     </main>

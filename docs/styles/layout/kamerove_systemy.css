@@ -1,3 +1,6 @@
-.expectations{
-    align-items: center;
+@media only screen and (max-width: 730px)
+{
+    .uvod{
+        flex-direction: column-reverse;
+    }
 }
