@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozvučovací systémy</title>
+    <title>Ozvučovací systémy  - KAMERA Liberec</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.gif">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../layers.css">
-    <link rel="stylesheet" href="../styles/layout/ozvucovaci_systemy.css">
+    <link rel="stylesheet" href="../styles/layout/sluzby.css">
 
     <script defer src="../scripts/header.js"></script>
     <script defer src="../scripts/viewport_width.js"></script>
+    <script defer src="../scripts/accordion.js"></script>
+    <script defer src="../scripts/menu_accordion.js"></script>
 </head>
 <body>
-    <header class="header content__background">
+    <header class="header content__background content__background--blue">
         <nav class="header__navbar navbar content__wrapper content__background">
-            <a href="../index.html"><img class="navbar__logo" src="../img/KAMERA_logo_white.svg" alt="logo firmy KAMERA Liberec"></a>
-            <menu class="navbar__menu menu">
-                <li class="menu__list menu__list--first menu__list--dropdown"><a class="menu__link menu__link--dropdown" href="javascript:;">Služby</a>
-                    <ul class="menu__submenu submenu submenu--first">
-                        <li class="menu__list menu__list--second"><a class="menu__link" href="./kamerove_systemy.html">Kamerové systémy</a></li>
-                        <li class="menu__list menu__list--second"><a class="menu__link" href="./zabezpecovaci_systemy.html">Zabezpečovací systémy</a></li>
-                        <li class="menu__list menu__list--second"><a class="menu__link" href="./ozvucovaci_systemy.html">Ozvučovací systémy</a></li>
-                        <li class="menu__list menu__list--second"><a class="menu__link" href="./ostatni_systemy.html">Ostatní slaboproudé systémy</a></li>
+            <a href="../index.html"><img class="navbar__logo" src="../img/KAMERA_logo_white.svg" alt="logo firmy KAMERA Liberec" width="186" height="70"></a>
+            <menu class="navbar__navmenu navmenu">
+                <li class="navmenu__list navmenu__list--first navmenu__list--dropdown"><a class="navmenu__link navmenu__link--dropdown" href="javascript:;">Služby</a>
+                    <ul class="navmenu__submenu submenu submenu--first">
+                        <li class="navmenu__list navmenu__list--second"><a class="navmenu__link" href="./kamerove_systemy.html">Kamerové systémy</a></li>
+                        <li class="navmenu__list navmenu__list--second"><a class="navmenu__link" href="./zabezpecovaci_systemy.html">Zabezpečovací systémy</a></li>
+                        <li class="navmenu__list navmenu__list--second"><a class="navmenu__link" href="./ozvucovaci_systemy.html">Ozvučovací systémy</a></li>
+                        <li class="navmenu__list navmenu__list--second"><a class="navmenu__link" href="./datove_rozvody.html">Datové rozvody</a></li>
+                        <li class="navmenu__list navmenu__list--second"><a class="navmenu__link" href="./ostatni_systemy.html">Ostatní slaboproudé systémy</a></li>
                     </ul>
                 </li>
-                <li class="menu__list menu__list--first"><a class="menu__link" href="../o_firme.html">O firmě</a></li>
-                <li class="menu__list menu__list--first"><a class="menu__link" href="../kontakt.html">Kontakt</a></li>                
+                <li class="navmenu__list navmenu__list--first"><a class="navmenu__link" href="../o_firme.html">O firmě</a></li>
+                <li class="navmenu__list navmenu__list--first"><a class="navmenu__link" href="../kontakt.html">Kontakt</a></li>                
             </menu>
             <div class="navbar__hamburger hamburger">
                 <span class="hamburger__bar"></span>
@@ -37,7 +41,53 @@
         <h1 class="header__title">Ozvučovací systémy</h1>
     </header>
     <main class="main">
-
+        <section class="section info-section info-section--2-colmuns content__wrapper uvod">
+            <div class="info-section__content">
+                <h2 class="info-section__title">Rozdělení ozvučovacích systémů</h2>
+                <p class="info-section__paragraph">
+                    Ozvučovací systémy můžeme z našeho pohledu rozdělit na klasické systémy, tedy např. hifi ozvučení rodinných domů, a zjednodušeně řečeno systémy stovoltové. Ty se používají převážně pro ozvučení restaurací a velkých prostor jako jsou supermarkety. Zvláštní kapitolou jsou samozřejmě systémy evakuačního rozhlasu dle ČSN EN 60849.  K tomu je třeba přidat ozvučení IP a WiFi.
+                </p>
+                <p class="info-section__paragraph">
+                    Klasické systémy můžeme opět zjednodušeně dělit na monofonní, stereofonní, domácí kino atd. Pod pojmem stovoltové systémy zde rozumíme ty, které jsou založené na rozvodu signálu na úrovni 100, 70 a 50 V.
+                </p>
+            </div>
+            <div class="menu info-section__menu">
+                <div class="menu__title-wrapper">
+                    <h3 class="menu__title">Ostatní služby:</h3>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a class="button menu__link" href="./kamerove_systemy.html">Kamerové systémy</a></li>
+                    <li class="menu__list-item"><a class="button menu__link" href="./zabezpecovaci_systemy.html">Zabezpečovací systémy</a></li>
+                    <li class="menu__list-item"><a class="button menu__link" href="./datove_rozvody.html">Datové rozvody</a></li>
+                    <li class="menu__list-item"><a class="button menu__link" href="./ostatni_systemy.html">Ostatní slaboproudé systémy</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section expectations info-section info-section--2-colmuns content__wrapper content__background content__background--blue">
+            <div class="info-section__content expectations__content">
+                <h2 class="expectations__title">Co nabízíme?</h2>
+                <p class="expectations__paragraph">
+                    Ozvučovací systémy jsme schopni namontovat do supermarketů, obchodních domů, hotelů, zábavních center, sportovních zařízení, škol, veřejných institucí, úřadů, letišť, nádraží i průmyslových podniků.  V tomto odvětví nabízíme i IP ozvučení, kde možnost použití datových rozvodů může převážit i vyšší cenu komponent.
+                </p>                
+                <a class="button" href="../kontakt.html">Napište nám</a>
+            </div>            
+            <img class="info-section__img expectations__img" src="../img/microphone_foto_lowres.jpg" alt="schéma elektronických zabezpečovacích systémů" loading="lazy" width="456" height="303">
+        </section>
+        <section class="section advice content__wrapper">
+            <h2 class="advice__title">A co rodinné domy?</h2>
+            <p class="advice__paragraph">
+                Pro majitele rodinných domů může být zajímavá nabídka tzv. multiroom ozvučení, kdy je možné si v každé místnosti pustit něco jiného. Největší zkušenosti máme se stovoltovými ozvučovacími systémy, tedy s plošným ozvučením. V minulosti jsme ozvučovali sportbary po celé republice. 
+            </p>
+        </section>
+        <section class="logos section content__wrapper">
+            <h2 class="logos__title">Dodavatelé:</h2>
+            <div class="logos__content">
+                <img src="../img/logo_ozvucovaci/monacor-ozv.gif" alt="logo Variant" class="logos__img" loading="lazy" width="134" height="64">
+                <img src="../img/logo_ozvucovaci/Dexon-ozv.jpg" alt="logo Jablotron" class="logos__img" loading="lazy" width="207" height="128">
+                <img src="../img/logo_ozvucovaci/empesort-ozv.gif" alt="logo ADI" class="logos__img" loading="lazy" width="179" height="64">
+                
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__content">
