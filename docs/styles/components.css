@@ -145,7 +145,6 @@
     .navmenu__list--second{
         width: 300px;
     }
-
     .navmenu__link--dropdown{
         pointer-events: none;
     }
@@ -153,11 +152,10 @@
         position: relative;
         top: 0;
         left: 1em;
-        max-height: initial;
-        margin-left: 1em;
         opacity: 1;  
         pointer-events: all;
         border-left: 2px solid var(--green);        
+        transition: none;
     }   
 }
 
