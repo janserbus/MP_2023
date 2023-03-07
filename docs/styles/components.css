@@ -70,7 +70,7 @@
     opacity: 0;
     transition: all 220ms ease-out;
 }
-.navmenu__list--dropdown:hover > .submenu, .submenu.open{
+.navmenu__list--dropdown:hover > .submenu{
     pointer-events: all;
     top: 100%;
     opacity: 1;
@@ -135,6 +135,10 @@
         box-shadow: 0px 12px 20px 0px var(--shadow);
         transition: all 300ms ease-in;
     }
+    .navmenu__list--dropdown:hover > .submenu{
+        top: 0;
+        transition: none;
+    }
     .navmenu__list--first{
         width: 80%;
     }
@@ -147,10 +151,12 @@
     }
     .submenu{
         position: relative;
+        top: 0;
         left: 1em;
         max-height: initial;
         margin-left: 1em;
         opacity: 1;  
+        pointer-events: all;
         border-left: 2px solid var(--green);        
     }   
 }
