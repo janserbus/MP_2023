@@ -1,6 +1,7 @@
 /* HEADER
   ===================================================== */
 .header{
+    padding: 0;
     overflow-x: clip;    
 }
 .header::before{    
@@ -359,6 +360,10 @@
     align-items: center;
     gap: 10%;
 }
+.info-section--reverse{
+    flex-direction: row-reverse;
+    gap: 4%;
+}
 .info-section__content{
     flex-basis: 50%;
     flex-grow: 1;
@@ -391,7 +396,7 @@
 {
     .info-section--2-colmuns{
         flex-direction: column;
-    }
+    }    
     .info-section__content{
         width: 100%;
     }

@@ -63,6 +63,13 @@ li{
     margin: .8em 0;
 }
 
+.section{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 @media only screen and (max-width: 540px){
     html{
         font-size: 16px;        
@@ -95,17 +102,23 @@ li{
 /* ----------CONTENT---------- */
 .content__wrapper{
     max-width: var(--content-width);
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .content__background{
     position: relative;
+}
+.content__background--blue{
+    padding-top: 4rem;
+    padding-bottom:4rem;
 }
 .content__background--blue::before{
     background-color: var(--blue);    
 }
 .content__background--blue *{
-    color: var(--white);
+    color: var(--white);    
 }
 .content__background::before{
     position: absolute;
@@ -137,7 +150,7 @@ li{
     display: block;
     width: fit-content;
     padding: .6rem 1.5rem;
-    margin: 2em 0;
+    margin-top: 2em;
     text-decoration: none;
     color: var(--white);
     font-size: 1.2rem;
@@ -149,14 +162,6 @@ li{
 .button:hover, .button:active{    
     transform: scale(1.03);
     transition: all 100ms ease-in;
-}
-
-/* ----------SECTION---------- */
-.section{
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 /* ----------IFRAME---------- */
