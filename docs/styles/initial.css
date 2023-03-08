@@ -58,6 +58,7 @@ img{
 }
 a{
     color: var(--light-blue);
+    font-weight: 700;
 }
 li{
     margin: .8em 0;
@@ -74,10 +75,6 @@ li{
     html{
         font-size: 16px;        
     }
-    h1, h2, h3, h4, h5, h6{
-        text-align: center;
-    }
-
 }
 
 /* GENERAL COMPONENTS
@@ -165,13 +162,24 @@ li{
 }
 
 /* ----------IFRAME---------- */
-.iframe__wrapper{
+.iframe__wrapper--responsive-16_9{
+    --scale: 1;
     position: relative;
     overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
+    width: calc(100% * var(--scale));
+    padding-top: calc(56.25% * var(--scale));
 }
-.iframe{    
+.iframe__wrapper--responsive-4_3{
+    --scale: 1;
+    position: relative;
+    overflow: hidden;
+    width: calc(100% * var(--scale));
+    padding-top: calc(75% * var(--scale));
+}
+.iframe{
+    border: none;
+}
+.iframe--responsive{    
     position: absolute;
     top: 0;
     left: 0;    

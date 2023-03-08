@@ -1,0 +1,10 @@
+h2{
+    text-align: center;
+}
+.history__paragraph{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.reference__section{
+    align-items: flex-start;
+}
