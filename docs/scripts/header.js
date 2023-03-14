@@ -8,15 +8,3 @@ hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("active");
     menu.classList.toggle("active");    
 });
-
-// dropdown.addEventListener("click", () =>{
-//     console.log("dropdown clicked");
-//     dropdownLink.classList.toggle("open");
-//     dropdownContent.classList.toggle("open");
-// });
-
-// dropdown.addEventListener("mouseover", () =>{
-//     console.log("dropdown hovered");
-//     dropdownLink.classList.toggle("open");
-//     dropdownContent.classList.toggle("open");
-// });

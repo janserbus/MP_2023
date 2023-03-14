@@ -1,6 +1,5 @@
-@layer reset.normalize, reset.initial, components, overwrite;
+@layer reset.normalize, reset.initial, components;
 
 @import url(./styles/normalize.css) layer(reset.normalize);
 @import url(./styles/initial.css) layer(reset.initial);
 @import url(./styles/components.css) layer(components);
-@import url(./styles/overwrite.css) layer(overwrite);
