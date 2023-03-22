@@ -238,6 +238,8 @@
 }
 .slide__img{
     width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
 .slide__wrapper{
     background-color: var(--blue);   
@@ -339,7 +341,6 @@
 }
 
 
-
 /* FOOTER
   ===================================================== */
 
@@ -362,18 +363,18 @@
 }
 .info-section--reverse{
     flex-direction: row-reverse;
-    gap: 4%;
 }
 .info-section__content{
-    flex-basis: 50%;
+    min-width: 50%;
     flex-grow: 1;
 }
 .info-section__img{
     width: 40%;
+    max-height: 400px;
 }
 .info-section__menu{
     flex-basis: 30%;
-    min-width: 270px;
+    min-width: 330px;
 }
 .menu, .menu__list{
     margin: 0;
