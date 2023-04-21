@@ -369,7 +369,7 @@
     flex-grow: 1;
 }
 .info-section__img{
-    width: 40%;
+    max-width: 40%;
     max-height: 400px;
 }
 .info-section__menu{
@@ -391,6 +391,12 @@
     width: auto;
     margin: 0;
     text-align: center;
+}
+.menu__link--active{
+    background-color: var(--blue);
+    border-color: var(--blue);
+    transform: scale(1.05);
+    cursor: default;
 }
 
 @media only screen and (max-width: 730px)
