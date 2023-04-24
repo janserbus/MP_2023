@@ -1,10 +1,18 @@
 h2{
     text-align: center;
 }
+.history__title{
+    margin-top: 5rem;
+}
 .history__paragraph{
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin: 2rem 0;
 }
 .reference__section{
     align-items: flex-start;
+}
+.reference__details{
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    flex-wrap: wrap;
 }
